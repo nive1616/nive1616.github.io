@@ -1,0 +1,179 @@
+img {
+    width: 300px;
+}
+
+h1 {
+    font-family: Cambria;
+}
+h2 {
+    font-family: Helvetica;
+}
+h3 {
+    font-family: Helvetica;
+}
+p {
+    font-family: Helvetica;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #61d4f7;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #4404aa;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: white;
+    color: #4404aa;
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #4404aa;
+    color: white;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  /* Generic button design */
+  .button {
+    border: 2px;
+    border-color: #4404aa;
+    border-radius: 15%;
+    background-color: white;
+    color: #2196F3;
+    padding: 16px 32px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  /* LinkedIn Button */
+.LinkedIn {
+    border-color: #2196F3;
+    color: dodgerblue
+  }
+.LinkedIn:hover {
+    background: #2196F3;
+    color: white;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.c {
+    float: left;
+    width: 25%;
+    padding: 10px;
+  }
+  
+  /* Style the images inside the grid */
+  .c img {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+  
+  .c img:hover {
+    opacity: 1;
+  }
+  
+  /* Clear floats after the columns */
+  .r:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+  .container {
+    position: relative;
+    display: none;
+  }
+  
+  /* Expanding image text */
+  #imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+  }
+  
+  /* Closable button inside the image */
+  .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+  }
