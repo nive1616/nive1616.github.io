@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://unpkg.com/aframe-physics-system@1.4.0/dist/aframe-physics-system.min.js"></script>
+      </head>
+      <body>
+        <a-scene antialias="true">
+                <!-- <a-assets>
+                    <img id="sky" src=https://i.imgur.com/bkyMvoq.jpeg" crossorigin="anonymous" />
+                    <img id="gold" src="https://i.imgur.com/lzoA3pG.jpeg" crossorigin="anonymous" />
+                    <img id="red" src="https://i.imgur.com/xvQ29Rg.jpeg" crossorigin="anonymous" />
+                    <img id="blue" src="https://i.imgur.com/6Zocq36.jpeg"> </img>
+                </a-assets> -->
+                <a-sky 
+                    id="sky"
+                    color = "#FFFFFF"
+                    src=https://i.imgur.com/bkyMvoq.jpeg>
+                </a-sky>
+                <a-plane
+                    id="woodenGround"
+                    src="https://i.imgur.com/z8TiWqN.jpeg"
+                    width="200" height="100"
+                    position=" 0.00 -15.00 -10.00" 
+                    rotation="-90 0 0" 
+                    color="#888888">
+                </a-plane>
+                <a-box 
+                    id="red"
+                    src="https://i.imgur.com/xvQ29Rg.jpeg"
+                    position="0 1 -30" 
+                    depth="10" 
+                    height="17.4" 
+                    width="10.8" 
+                    rotation="0 10 0" 
+                    animation="property: rotation; to: 0 370 0; loop: true; dur: 9000">
+                </a-box>
+                <a-box 
+                    id="goldBig"
+                    src="https://i.imgur.com/lzoA3pG.jpeg"
+                    position="3 9 -22" 
+                    depth="2" 
+                    height="8.7" 
+                    width="5.4" 
+                    rotation="0 10 0" 
+                    animation="property: rotation; to: 0 -360 0; loop: true; dur: 900">
+                </a-box>
+                <a-cylinder 
+                    id="blueCylinder"
+                    src="https://i.imgur.com/6Zocq36.jpeg"
+                    position="2.5 1.55 -19" 
+                    radius="2.7" 
+                    height="2" 
+                    rotation="0 100 90" 
+                    animation="property: rotation; to: 0 460 450; loop: true; dur: 9000">
+                </a-cylinder>
+                <a-box 
+                    id="blueBox"
+                    src="https://i.imgur.com/6Zocq36.jpeg"
+                    position="-5.4 -5.2 -22" 
+                    depth="3" 
+                    height="4.5" 
+                    width="3" 
+                    rotation="0 10 0" 
+                    animation="property: rotation; to: 0 -370 0; loop: true; dur: 900">
+                </a-box>
+                <a-box 
+                    id="goldSmall"
+                    src="https://i.imgur.com/lzoA3pG.jpeg"
+                    position="0 -9 -22" 
+                    depth="1" 
+                    height="5" 
+                    width="3" 
+                    rotation="0 10 0" 
+                    animation="property: rotation; to: 0 370 0; loop: true; dur: 3000">
+                </a-box>
+                <a-entity position="0 0 5" rotation="0 0 0">
+                    <a-camera active="true">
+                    </a-camera>
+                </a-entity>
+                </a-scene>
+                <!-- Spring Modern Geometric Abstract Art Print
+by José Ricardo  -->
+      </body>
+</html>
