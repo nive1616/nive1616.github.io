@@ -1,3 +1,6 @@
+html,  body {
+  background-color: #c9c3ee;
+}
 img {
     width: 300px;
 }
@@ -6,7 +9,7 @@ h1 {
     font-family: Cambria;
 }
 h2 {
-    font-family: Helvetica;
+    font-family: Georgia;
 }
 h3 {
     font-family: Helvetica;
@@ -213,10 +216,18 @@ body {
 
 /* Style the counter cards */
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   padding: 16px;
   text-align: left;
   background-color: #c3daee;
+}
+
+/* Style the counter cards */
+.cardPurple {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 16px;
+  text-align: left;
+  background-color: #c9c3ee;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
