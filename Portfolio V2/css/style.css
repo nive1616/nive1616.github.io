@@ -112,14 +112,16 @@ p {
 
   /* Generic button design */
   .button {
-    border: 2px;
-    border-color: #4404aa;
-    border-radius: 15%;
     background-color: #4404aa;
-    color: #fcfcfc;
-    padding: 16px 32px;
-    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
     cursor: pointer;
+    border-radius: 16px;
   }
 
 .button:hover {
@@ -237,4 +239,100 @@ body {
     display: block;
     margin-bottom: 20px;
   }
+}
+
+
+
+
+
+
+
+
+
+/* Meal Planning Tool Slideshow CSS */
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.containerMP {
+  position: relative;
+}
+
+/* Hide the images by default */
+.MPSlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursorMP {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prevMP,
+.nextMP {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextMP {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevMP:hover,
+.nextMP:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertextMP {
+  color: rgb(49, 0, 226);
+  font-size: 16px;
+  padding: 15px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-containerMP {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.rowMP:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.columnMP {
+  float: left;
+  width: 9.09%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
 }
